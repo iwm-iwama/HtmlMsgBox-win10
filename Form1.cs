@@ -7,7 +7,7 @@ namespace iwm_HtmlMsgBox
 {
 	public partial class Form1 : Form
 	{
-		private const string VER = "HtmlMessageBox iwm20201121";
+		private const string VER = "HtmlMessageBox iwm20210530";
 
 		private static readonly string[] ARGS = Environment.GetCommandLineArgs();
 
@@ -15,7 +15,7 @@ namespace iwm_HtmlMsgBox
 		private readonly int[] BtnYes_POSX = { 0, 0 };
 
 		private readonly string ExecPath = Application.StartupPath;
-		private string sStartUrl = "help/index.html";
+		private string sStartUrl = "_html/index.html";
 
 		private Color BtnGoStartPageColor;
 
@@ -132,9 +132,42 @@ namespace iwm_HtmlMsgBox
 			Width = iW;
 			Height = iH;
 
-			StartPosition = FormStartPosition.CenterScreen;
-			Left = (Screen.PrimaryScreen.Bounds.Width - Width) / 2;
-			Top = (Screen.PrimaryScreen.Bounds.Height - Height) / 2;
+			StartPosition = FormStartPosition.Manual;
+			Form1_StartPosition();
+		}
+
+		private void Form1_StartPosition()
+		{
+			int WorkingAreaW = Screen.PrimaryScreen.WorkingArea.Width;
+			int WorkingAreaH = Screen.PrimaryScreen.WorkingArea.Height;
+
+			int WorkingAreaX = Screen.PrimaryScreen.WorkingArea.X;
+			int WorkingAreaY = Screen.PrimaryScreen.WorkingArea.Y;
+
+			int MouseX = Cursor.Position.X;
+			int MouseY = Cursor.Position.Y;
+
+			// X = Width
+			if (WorkingAreaW < MouseX + Size.Width)
+			{
+				MouseX -= Size.Width;
+				if (MouseX < 0)
+				{
+					MouseX = WorkingAreaX + 10;
+				}
+			}
+
+			// Y = Height
+			if (WorkingAreaH < MouseY + Size.Height)
+			{
+				MouseY -= Size.Height;
+				if (MouseY < 0)
+				{
+					MouseY = WorkingAreaY + 10;
+				}
+			}
+
+			Location = new Point(MouseX, MouseY);
 		}
 
 		private Point MousePoint;
