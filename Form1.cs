@@ -7,7 +7,7 @@ namespace iwm_HtmlMsgBox
 {
 	public partial class Form1 : Form
 	{
-		private const string VER = "HtmlMessageBox iwm20210530";
+		private const string VER = "HtmlMessageBox iwm20210616";
 
 		private static readonly string[] ARGS = Environment.GetCommandLineArgs();
 
@@ -37,6 +37,7 @@ namespace iwm_HtmlMsgBox
 			WebBrowser1.Height = WebBrowser1_HEIGHT[1];
 
 			CbAccept.Checked = true;
+			CbAccept.Visible = false;
 
 			BtnYes_POSX[0] = BtnYes.Location.X;
 			BtnYes_POSX[1] = BtnNo.Location.X;
@@ -90,6 +91,7 @@ namespace iwm_HtmlMsgBox
 				{
 					CbAccept.Text = _s1.Substring(10);
 					CbAccept.Checked = false;
+					CbAccept.Visible = true;
 					WebBrowser1.Height = WebBrowser1_HEIGHT[0];
 				}
 				else if (Regex.IsMatch(_s1, @"^\-button\=\d+\,\d+"))
@@ -133,10 +135,10 @@ namespace iwm_HtmlMsgBox
 			Height = iH;
 
 			StartPosition = FormStartPosition.Manual;
-			Form1_StartPosition();
+			SubForm1_StartPosition();
 		}
 
-		private void Form1_StartPosition()
+		private void SubForm1_StartPosition()
 		{
 			int WorkingAreaW = Screen.PrimaryScreen.WorkingArea.Width;
 			int WorkingAreaH = Screen.PrimaryScreen.WorkingArea.Height;

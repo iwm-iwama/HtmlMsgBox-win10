@@ -54,7 +54,7 @@
 			this.BtnYes.Margin = new System.Windows.Forms.Padding(0);
 			this.BtnYes.Name = "BtnYes";
 			this.BtnYes.Size = new System.Drawing.Size(70, 24);
-			this.BtnYes.TabIndex = 0;
+			this.BtnYes.TabIndex = 2;
 			this.BtnYes.Text = "はい";
 			this.BtnYes.UseVisualStyleBackColor = true;
 			this.BtnYes.Click += new System.EventHandler(this.BtnYes_Click);
@@ -74,7 +74,7 @@
 			this.BtnNo.Margin = new System.Windows.Forms.Padding(0);
 			this.BtnNo.Name = "BtnNo";
 			this.BtnNo.Size = new System.Drawing.Size(70, 24);
-			this.BtnNo.TabIndex = 1;
+			this.BtnNo.TabIndex = 3;
 			this.BtnNo.Text = "いいえ";
 			this.BtnNo.UseVisualStyleBackColor = true;
 			this.BtnNo.Click += new System.EventHandler(this.BtnNo_Click);
@@ -94,7 +94,7 @@
 			this.BtnCancel.Margin = new System.Windows.Forms.Padding(0);
 			this.BtnCancel.Name = "BtnCancel";
 			this.BtnCancel.Size = new System.Drawing.Size(70, 24);
-			this.BtnCancel.TabIndex = 2;
+			this.BtnCancel.TabIndex = 4;
 			this.BtnCancel.Text = "閉じる";
 			this.BtnCancel.UseVisualStyleBackColor = true;
 			this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
@@ -111,8 +111,7 @@
 			this.CbAccept.Margin = new System.Windows.Forms.Padding(0);
 			this.CbAccept.Name = "CbAccept";
 			this.CbAccept.Size = new System.Drawing.Size(157, 17);
-			this.CbAccept.TabIndex = 4;
-			this.CbAccept.TabStop = false;
+			this.CbAccept.TabIndex = 1;
 			this.CbAccept.Text = "上記内容を承諾します。";
 			this.CbAccept.UseVisualStyleBackColor = true;
 			this.CbAccept.CheckedChanged += new System.EventHandler(this.CbAccept_CheckedChanged);
@@ -131,7 +130,7 @@
 			this.TbUrl.Name = "TbUrl";
 			this.TbUrl.ReadOnly = true;
 			this.TbUrl.Size = new System.Drawing.Size(349, 12);
-			this.TbUrl.TabIndex = 7;
+			this.TbUrl.TabIndex = 0;
 			this.TbUrl.TabStop = false;
 			this.TbUrl.Text = "URL";
 			this.TbUrl.WordWrap = false;
@@ -151,7 +150,7 @@
 			this.BtnGoStartPage.Margin = new System.Windows.Forms.Padding(0);
 			this.BtnGoStartPage.Name = "BtnGoStartPage";
 			this.BtnGoStartPage.Size = new System.Drawing.Size(25, 22);
-			this.BtnGoStartPage.TabIndex = 6;
+			this.BtnGoStartPage.TabIndex = 0;
 			this.BtnGoStartPage.TabStop = false;
 			this.BtnGoStartPage.Text = "<<";
 			this.BtnGoStartPage.UseVisualStyleBackColor = false;
