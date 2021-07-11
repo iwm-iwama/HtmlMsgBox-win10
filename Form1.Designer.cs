@@ -118,8 +118,8 @@
 			// 
 			// TbUrl
 			// 
-			this.TbUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.TbUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.TbUrl.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.TbUrl.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.TbUrl.ContextMenuStrip = this.CmsNull;
@@ -158,9 +158,9 @@
 			// 
 			// WebBrowser1
 			// 
-			this.WebBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.WebBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+			| System.Windows.Forms.AnchorStyles.Left)
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.WebBrowser1.ContextMenuStrip = this.CmsNull;
 			this.WebBrowser1.Location = new System.Drawing.Point(1, 25);
 			this.WebBrowser1.Margin = new System.Windows.Forms.Padding(0);
